@@ -19,6 +19,8 @@ h1 {
 }
 
 .left-pane{
+    display:flex;
+    flex-flow:column;
     flex: 0 0 60px;
     padding:10px;
 }
