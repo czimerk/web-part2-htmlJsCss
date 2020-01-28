@@ -1,2 +1,2 @@
 # html-course
-First project on html
+First project with basic html pages and self-hosting
