@@ -1,19 +1,14 @@
 var headlineTextElement = document.getElementById("headline-text");
 headlineTextElement.innerHTML = "Webprogramozás mindenkinek!";
 
-var homeLink = document.createElement("a");
-var aboutMeLink = document.createElement("a");
-var worksLink = document.createElement("a");
-
-homeLink.setAttribute("href", "index.html");
-aboutMeLink.setAttribute("href", "aboutme.html");
-worksLink.setAttribute("href", "works.html");
-
-homeLink.innerHTML = "Főoldal";
-aboutMeLink.innerHTML = "Rólam";
-worksLink.innerHTML = "Munkáim";
-
 var navigationBar = document.getElementById("navigation-bar");
-navigationBar.appendChild(homeLink);
-navigationBar.appendChild(aboutMeLink);
-navigationBar.appendChild(worksLink);
+addNavLink(navigationBar, "index.html", "Főoldal");
+addNavLink(navigationBar, "aboutme.html", "Rólam");
+addNavLink(navigationBar, "works.html", "Munkáim");
+
+function addNavLink(navBarElement, page, label){
+    var link = document.createElement("a");
+    link.setAttribute("href", page);
+    link.innerHTML = label;
+    navBarElement.appendChild(link);
+}
