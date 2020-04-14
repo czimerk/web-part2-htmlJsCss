@@ -1,36 +1,31 @@
-
-body{
-    margin: 0px;
-    color: #ddd;
-    background-color: #1b1a1a;
-    display: flex;
-    flex-flow: column;
-    height: -webkit-fill-available;
+body {
+  margin: 0px;
+  color: #ddd;
+  background-color: #1b1a1a;
+  display: flex;
+  flex-flow: column;
+  height: -webkit-fill-available;
 }
 
 h1 {
-    text-align: center;
-    flex:1;
+  text-align: center;
+  flex: 0 0 42px;
 }
 
-.header, .page-content{
-    display: flex;
-    flex-flow: row;
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
 }
 
-.left-pane{
-    display:flex;
-    flex-flow:column;
-    flex: 0 0 100px;
-    padding:10px;
+.left-pane {
+  display: flex;
+  flex-flow: column;
+  flex: 0 0 100px;
+  padding: 10px;
 }
 
-.right-pane{
-    flex:1;
-    text-align: center;
-}
-
-.content{
-    flex:1;
-    padding:10px;
+.content {
+  flex: 1;
+  padding: 10px;
 }
